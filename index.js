@@ -67,7 +67,7 @@ async function connectToWA() {
   const { state, saveCreds } = await useMultiFileAuthState(path.join(__dirname, '/auth_info_baileys/'));
   const { version } = await fetchLatestBaileysVersion();
 
-  const danuwa = makeWASocket({
+  const mahasona = makeWASocket({
     logger: P({ level: 'silent' }),
     printQRInTerminal: false,
     browser: Browsers.macOS("Firefox"),
